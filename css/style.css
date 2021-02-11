@@ -2,13 +2,10 @@
 
 [class*="col-"] {
   /* debug */
-  /* background-color: lime;
-  height: 200px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black; */
-  box-sizing: border-box;
+  /* background-color: lime; */
+  /* height: 200px; */
+  border-top: 1px solid transparent;
 }
-
 
 /* header */
 
@@ -52,10 +49,6 @@ header {
 
 /* ------------THREE--------------------- */
 
-.head3 {
-  float: right;
-}
-
 ul.head3 {
   list-style-type: none;
 }
@@ -94,16 +87,15 @@ ul.head3 {
 }
 
 .sign-up-link a {
-padding: 0px 10px 10px 10px;
+padding: 10px 10px 10px 10px;
 border: 1px solid blue;
 border-radius: 5px;
 color: blue;
-margin-right: none;
+margin-right: 0;
 }
 
 #db-hamburger {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 2px;
   font-size: 50px;
   color: blue;
 }
@@ -126,7 +118,6 @@ margin-right: none;
   .head3 {
     display: none;
   }
-
 
 }
 
