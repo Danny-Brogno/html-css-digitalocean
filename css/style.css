@@ -1,3 +1,9 @@
-h1 {
-  background-color: red;
+/* GENERAL RULES FOR THE COLS */
+
+[class*="col-"] {
+  /* debug */
+  background-color: green;
+  height: 200px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
 }
