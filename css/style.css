@@ -4,6 +4,141 @@
   /* debug */
   background-color: green;
   height: 200px;
+  border-top: 2px solid black;
   border-bottom: 2px solid black;
-  border-right: 2px solid black;
+  box-sizing: border-box;
+}
+
+
+/* header */
+
+/* -------------ONE--------------- */
+
+#logo-pic {
+  max-width: 100%;
+  padding-top: 65px;
+  padding-bottom: 30px;
+}
+
+.db-pad {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+/* --------------TWO---------------- */
+
+.head2 li {
+  display: inline;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.head2 a {
+  color: #000000;
+}
+
+.head2 a:link {
+  text-decoration: none;
+}
+
+.head2 a:visited {
+  text-decoration: none;
+}
+
+.head2 a:hover {
+  color: blue;
+}
+
+/* ------------THREE--------------------- */
+
+ul.head3 {
+  list-style-type: none;
+}
+
+.head3 li {
+  display: inline;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.head3 a {
+  color: #000000;
+}
+
+.head3 a:link {
+  text-decoration: none;
+}
+
+.head3 a:visited {
+  text-decoration: none;
+}
+
+.head3 a:hover {
+  color: blue;
+}
+
+
+.head3 .sign-up-link a {
+  color: blue;
+}
+
+.sign-up-link {
+float: right;
+padding: 0px 15px 15px 15px;
+border: 1px solid blue;
+border-radius: 5px;
+height: 20px;
+color: blue;
+margin-right: none;
+}
+
+#db-hamburger {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  font-size: 50px;
+  color: blue;
+}
+
+
+
+
+/* --------------------MEDIA QUERY-------------------------------------- */
+
+@media all and (max-width: 767px) {
+
+  .head2 {
+    display: none;
+  }
+
+  .head3 {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+  .head2 {
+    white-space: nowrap;
+    text-overflow: hidden;
+  }
+
+  .sign-up-link {
+  /* NO CLUE HOW TO KEEP THIS STILL */
+  }
+
+  #db-hamburger {
+    display: none;
+  }
+}
+
+@media all and (min-width: 992px) {
+
+  #db-hamburger {
+    display: none;
+  }
 }
