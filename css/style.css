@@ -1,10 +1,11 @@
 /* GENERAL RULES FOR THE COLS */
 
 [class*="col-"] {
-  /* debug */
-  /* background-color: lime; */
-  /* height: 200px; */
-  border-top: 1px solid transparent;
+  /* border: 1px solid transparent; */
+  /* background-color: yellow; */
+  min-height: 70px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
 }
 
 /* header */
@@ -104,6 +105,60 @@ margin-right: 0;
   text-align: right;
 }
 
+/* ------------JUMBOTRON------------------------------------ */
+
+.jumbotron {
+  width: 100%;
+  background-image: url(../img/jumbo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* debug */
+  min-height: 700px;
+}
+
+.db-pad {
+  padding: 80px 0px 0px 0px;
+}
+
+.height-test {
+  /* debug */
+  min-height: 700px;
+}
+
+.jumbo-text {
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+
+.jumbo-text > h1 {
+  font-size: 60px;
+}
+
+.jumbo-text > p {
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.db-white-container {
+  /* debug */
+  background-color: #FFFFFF;
+  min-height: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.db-white-container > h3 {
+  color: blue;
+}
+
+
+
+
+
 
 
 
@@ -118,7 +173,6 @@ margin-right: 0;
   .head3 {
     display: none;
   }
-
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
