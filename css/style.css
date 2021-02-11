@@ -2,27 +2,26 @@
 
 [class*="col-"] {
   /* debug */
-  background-color: green;
+  /* background-color: lime;
   height: 200px;
   border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid black; */
   box-sizing: border-box;
 }
 
 
 /* header */
 
+header {
+  height: 70px;
+  line-height: 70px;
+}
+
 /* -------------ONE--------------- */
 
 #logo-pic {
+  vertical-align: middle;
   max-width: 100%;
-  padding-top: 65px;
-  padding-bottom: 30px;
-}
-
-.db-pad {
-  padding-top: 70px;
-  padding-bottom: 30px;
 }
 
 /* --------------TWO---------------- */
@@ -53,6 +52,10 @@
 
 /* ------------THREE--------------------- */
 
+.head3 {
+  float: right;
+}
+
 ul.head3 {
   list-style-type: none;
 }
@@ -63,6 +66,10 @@ ul.head3 {
   font-weight: bold;
   font-size: 15px;
   margin-right: 10px;
+}
+
+.head3 li:last-child {
+  margin:0;
 }
 
 .head3 a {
@@ -86,12 +93,10 @@ ul.head3 {
   color: blue;
 }
 
-.sign-up-link {
-float: right;
-padding: 0px 15px 15px 15px;
+.sign-up-link a {
+padding: 0px 10px 10px 10px;
 border: 1px solid blue;
 border-radius: 5px;
-height: 20px;
 color: blue;
 margin-right: none;
 }
@@ -99,9 +104,12 @@ margin-right: none;
 #db-hamburger {
   margin-left: 50px;
   margin-right: 50px;
-  text-align: center;
   font-size: 50px;
   color: blue;
+}
+
+.text-right {
+  text-align: right;
 }
 
 
@@ -118,20 +126,17 @@ margin-right: none;
   .head3 {
     display: none;
   }
+
+
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
 
   .head2 {
-    white-space: nowrap;
-    text-overflow: hidden;
+    display: none;
   }
 
-  .sign-up-link {
-  /* NO CLUE HOW TO KEEP THIS STILL */
-  }
-
-  #db-hamburger {
+  .head3 {
     display: none;
   }
 }
