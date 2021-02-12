@@ -2,9 +2,9 @@
 
 [class*="col-"] {
   border: 1px solid transparent;
-  background-color: yellow;
+  /* background-color: yellow;
   min-height: 70px;
-  border: 1px solid black;
+  border: 1px solid black; */
 }
 
 /* THIS MAKES ALL THE BULLETS GO AWAY */
@@ -242,26 +242,22 @@ margin-right: 0;
 /* --------"DEPLOY AND SCALE" SECTION*---------------/
 
 /* debug */
-.db-deploy {
-  min-height: 200px;
+
+.db-pad-bottom {
+padding-bottom: 50px;
 }
 
-.db-deploy1 {
+.db-deploy-style {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   padding-bottom: 50px;
 }
 
-.db-deploy1 > h2 {
-  color: #031c4e;
-  font-size: 30px;
-  padding-top: 80px;
-}
-
-.db-deploy1 > p {
-  color: #5c6a88;
-  font-size: 25px;
-  padding-top: 10px;
+.db-deploy {
+  position: relative;/* ONE OF ITS SONS IS IN POSITION ABSOLUTE IN MEDIA QUERY XS (db-weird-stuff)*/
+  min-height: 200px;
+  line-height: 200%;
+  font-size: 18px;
 }
 
 .db-weird-stuff {
@@ -272,27 +268,56 @@ margin-right: 0;
   color: #5c6a88;
 }
 
+.db-deploy-style > h2 {
+  color: #031c4e;
+  font-size: 30px;
+  padding-top: 80px;
+}
+
+.db-deploy-style > p {
+  color: #5c6a88;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.db-colortext1 {
+  color: #031c4e;
+}
+
+.db-colortext2 {
+  color: #5c6a88;
+}
+
+
 /* --------------------MEDIA QUERY-------------------------------------- */
 
 @media all and (max-width: 767px) {
-
   /* HEADER RULES */
   .head2 {
     display: none;
   }
+
   .head3 {
     display: none;
   }
 
   /* "DEPLOY" SECTION RULES */
-
   .db-invisible {
     display: none;
   }
+
+  .db-weird-stuff {
+    position: absolute;
+    left: 2px;
+  }
 }
 
-@media all and (min-width: 768px) and (max-width: 991px) {
 
+/*----------------MD-----------------*/
+
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  /* HEADER */
   .head2 {
     display: none;
   }
@@ -300,10 +325,18 @@ margin-right: 0;
   .head3 {
     display: none;
   }
+
+/* THESE TWO COLS IN MD THEY BOTH WENT BOTTOM LEFT. NOW AT LEAST THEY GO BOTTOM RIGHT */
+/* DEPLOY SECTION */
+  .db-moved-right {
+    float: right;
+  }
 }
 
-@media all and (min-width: 992px) {
+/* -------------------LG---------------------- */
 
+@media all and (min-width: 992px) {
+  /* HEADER */
   #db-hamburger {
     display: none;
   }
