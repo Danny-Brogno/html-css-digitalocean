@@ -2,10 +2,12 @@
 
 [class*="col-"] {
   border: 1px solid transparent;
-  background-color: yellow;/* ALL THESE 4 NEED TO BE COMMENTED */
-  min-height: 70px;/* ALL THESE 4 NEED TO BE COMMENTED */
-  border-right: 1px solid black;/* ALL THESE 4 NEED TO BE COMMENTED */
-  border-left: 1px solid black;/* ALL THESE 4 NEED TO BE COMMENTED */
+
+  /* background-color: yellow;
+
+  min-height: 70px;
+
+  border: 1px solid black; */
 }
 /* header */
 
@@ -104,6 +106,12 @@ margin-right: 0;
   color: blue;
 }
 
+#db-hamburger:visited,
+#db-hamburger:hover,
+#db-hamburger:link {
+  background-color: blue;
+}
+
 .text-right {
   text-align: right;
 }
@@ -152,22 +160,24 @@ margin-right: 0;
   padding-bottom: 20px;
 }
 
+/* ------------FORM--------------- */
+
 #db-email, #db-pwd {
   height: 35px;
+  width: 80%;
   border-radius: 5px;
-}
-
-#db-email {
   margin-bottom: 15px;
 }
 
+
 .form1 input[type=submit] {
+  width: 80%;
+  padding: 10px 0px 10px 0px;
   background-color: #579aff;
   border: none;
   color: white;
-  padding: 10px 125px 10px 125px;
   text-decoration: none;
-  margin: 20px 2px 20px 2px;
+  margin: 0px 0px 20px 0px;
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
@@ -178,9 +188,10 @@ margin-right: 0;
   background-position: left;
   background-size: 20px;
   background-repeat: no-repeat;
+  width: 80%;
+  padding: 10px 0px 10px 0px;
   border: 0.5 solid black;
   color: #000000;
-  padding: 10px 125px 10px 125px;
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
@@ -194,10 +205,29 @@ margin-right: 0;
   font-size: 15px;
 }
 
-/* ---------------UNDER JUMBOTRON-------------- */
+/* ---------------WEBSITE LOGOS SECTION-------------- */
 
 .under-jumbotron {
+  text-align: center;
+  height: 100%;
+  line-height: 70px;
+  font-family: 'Roboto', sans-serif;
   background-color: #f3f5f9;
+}
+
+.first-under-jumbotron h3 {
+  color: #8690a8;
+}
+
+.website-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#db-link-customers {
+  text-decoration: none;
+  color: blue;
 }
 
 
