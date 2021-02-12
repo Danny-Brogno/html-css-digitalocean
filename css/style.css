@@ -1,16 +1,19 @@
 /* GENERAL RULES FOR THE COLS */
 
 [class*="col-"] {
-  /* border: 1px solid transparent; */
-  /* background-color: yellow; */
-  min-height: 70px;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
+  border: 1px solid transparent;
+  background-color: yellow;/* ALL THESE 4 NEED TO BE COMMENTED */
+  min-height: 70px;/* ALL THESE 4 NEED TO BE COMMENTED */
+  border-right: 1px solid black;/* ALL THESE 4 NEED TO BE COMMENTED */
+  border-left: 1px solid black;/* ALL THESE 4 NEED TO BE COMMENTED */
 }
-
 /* header */
 
 header {
+  /* position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 900; */
   height: 70px;
   line-height: 70px;
 }
@@ -112,18 +115,13 @@ margin-right: 0;
   background-image: url(../img/jumbo.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* debug */
-  min-height: 700px;
+  padding-bottom: 80px;
 }
 
 .db-pad {
   padding: 80px 0px 0px 0px;
 }
 
-.height-test {
-  /* debug */
-  min-height: 700px;
-}
 
 .jumbo-text {
   font-family: 'Roboto', sans-serif;
@@ -140,9 +138,7 @@ margin-right: 0;
 }
 
 .db-white-container {
-  /* debug */
   background-color: #FFFFFF;
-  min-height: 500px;
   border: 1px solid black;
   border-radius: 10px;
   font-family: 'Roboto', sans-serif;
@@ -153,12 +149,56 @@ margin-right: 0;
 
 .db-white-container > h3 {
   color: blue;
+  padding-bottom: 20px;
 }
 
+#db-email, #db-pwd {
+  height: 35px;
+  border-radius: 5px;
+}
 
+#db-email {
+  margin-bottom: 15px;
+}
 
+.form1 input[type=submit] {
+  background-color: #579aff;
+  border: none;
+  color: white;
+  padding: 10px 125px 10px 125px;
+  text-decoration: none;
+  margin: 20px 2px 20px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
 
+.form1 input[type=button] {
+  background-image: url(../img/google-icon.png);
+  background-position: left;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  border: 0.5 solid black;
+  color: #000000;
+  padding: 10px 125px 10px 125px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #FFFFFF;
+}
 
+.db-terms-service {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+/* ---------------UNDER JUMBOTRON-------------- */
+
+.under-jumbotron {
+  background-color: #f3f5f9;
+}
 
 
 
