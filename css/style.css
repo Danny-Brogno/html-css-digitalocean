@@ -266,6 +266,7 @@ padding-bottom: 50px;
   border-left: 1px solid grey;
   line-height: 200%;
   color: #5c6a88;
+  padding-left: 5px;
 }
 
 .db-deploy-style > h2 {
@@ -292,24 +293,24 @@ padding-bottom: 50px;
 /* --------------------MEDIA QUERY-------------------------------------- */
 
 @media all and (max-width: 767px) {
-  /* HEADER RULES */
-  .head2 {
-    display: none;
-  }
+/* HEADER RULES */
+.head2 {
+  display: none;
+}
 
-  .head3 {
-    display: none;
-  }
+.head3 {
+  display: none;
+}
 
-  /* "DEPLOY" SECTION RULES */
-  .db-invisible {
-    display: none;
-  }
+/* "DEPLOY" SECTION RULES */
+.db-invisible {
+  display: none;
+}
 
-  .db-weird-stuff {
-    position: absolute;
-    left: 2px;
-  }
+.db-weird-stuff {
+  position: absolute;
+  left: 2px;
+}
 }
 
 
@@ -317,27 +318,31 @@ padding-bottom: 50px;
 
 
 @media all and (min-width: 768px) and (max-width: 991px) {
-  /* HEADER */
-  .head2 {
-    display: none;
-  }
+/* HEADER */
+.head2 {
+  display: none;
+}
 
-  .head3 {
-    display: none;
-  }
+.head3 {
+  display: none;
+}
 
 /* THESE TWO COLS IN MD THEY BOTH WENT BOTTOM LEFT. NOW AT LEAST THEY GO BOTTOM RIGHT */
 /* DEPLOY SECTION */
-  .db-moved-right {
-    float: right;
-  }
+.db-invisible {
+  display: none;
+}
+
+.db-moved-right {
+  float: right;
+}
 }
 
 /* -------------------LG---------------------- */
 
 @media all and (min-width: 992px) {
-  /* HEADER */
-  #db-hamburger {
-    display: none;
-  }
+/* HEADER */
+#db-hamburger {
+  display: none;
+}
 }
