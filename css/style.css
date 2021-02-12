@@ -12,12 +12,13 @@
 /* header */
 
 header {
-  /* position: fixed;
+  position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 900; */
+  z-index: 900;
   height: 70px;
   line-height: 70px;
+  background-color: #FFFFFF;
 }
 
 /* -------------ONE--------------- */
@@ -119,6 +120,7 @@ margin-right: 0;
 /* ------------JUMBOTRON------------------------------------ */
 
 .jumbotron {
+  margin-top: 70px;
   width: 100%;
   background-image: url(../img/jumbo.svg);
   background-repeat: no-repeat;
