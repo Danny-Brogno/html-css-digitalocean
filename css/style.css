@@ -2,6 +2,7 @@
 
 [class*="col-"] {
   border: 1px solid transparent;
+
   /* background-color: yellow;
   min-height: 70px;
   border: 1px solid black; */
@@ -216,7 +217,7 @@ margin-right: 0;
 
 /* ---------------WEBSITE LOGOS SECTION-------------- */
 
-.under-jumbotron {
+.under-jumbotron, .db-designed-developers {
   text-align: center;
   height: 100%;
   line-height: 70px;
@@ -240,9 +241,7 @@ margin-right: 0;
 }
 
 /* --------"DEPLOY AND SCALE" SECTION*---------------/
-
-/* debug */
-
+/* */
 .db-pad-bottom {
 padding-bottom: 50px;
 }
@@ -269,13 +268,17 @@ padding-bottom: 50px;
   padding-left: 5px;
 }
 
-.db-deploy-style > h2 {
+/*ADVANCED SELECTION FOR MULTIPLE SECTIONS ("DEPLOY" AND "DESIGN FOR DEVELOPERS")*/
+.db-deploy-style > h2,
+.db-design-developers-text > h2 {
   color: #031c4e;
   font-size: 30px;
   padding-top: 80px;
 }
 
-.db-deploy-style > p {
+/*ADVANCED SELECTION FOR MULTIPLE SECTIONS ("DEPLOY" AND "DESIGN FOR DEVELOPERS")*/
+.db-deploy-style > p,
+.db-design-developers-text > p {
   color: #5c6a88;
   font-size: 25px;
   padding-top: 10px;
@@ -289,8 +292,73 @@ padding-bottom: 50px;
   color: #5c6a88;
 }
 
+/* -------"DESIGNED FOR DEVELOPERS" section---------- */
 
-/* --------------------MEDIA QUERY-------------------------------------- */
+.disabled-link {
+  pointer-events: none;
+  cursor: default;
+  color: grey;
+
+}
+
+.active-link a {
+  color: #031c4e;
+}
+
+.active-link a:link {
+  text-decoration: none;
+}
+
+.active-link a:visited {
+  text-decoration: none;
+}
+
+.active-link a:hover {
+  color: #031c4e;
+}
+
+/* THIS MAKES THE 2 ARROWS GO DOWN TO THE MIDDLE OF THE IMAGE (BOTH ARROWS
+ simultaneously) */
+.db-invisible-xs {
+  position: relative;
+  top: 175px;
+}
+
+.db-design-developers-text > h3 {
+  color: #031c4e;
+}
+
+.db-design-developers-text span {
+  color: #006aff;
+}
+
+/* THIS IS JUST TO SET THE BACKGROUND SIZE (SEE BELOW) */
+.db-design-developers-text {
+  height: 100%;
+  width: 100%;
+}
+
+.db-design-developers-text span:nth-child(2):hover,
+.db-design-developers-text span:nth-child(3):hover,
+.db-design-developers-text span:nth-child(4):hover,
+.db-design-developers-text span:nth-child(5):hover {
+  background-image: url(../img/full-circle.ico);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 88%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------MEDIA QUERY XS-------------------------------------- */
 
 @media all and (max-width: 767px) {
 /* HEADER RULES */
@@ -311,10 +379,15 @@ padding-bottom: 50px;
   position: absolute;
   left: 2px;
 }
+
+/* "DESIGNED FOR DEVELOPERS" SECTION RULES*/
+.db-invisible-xs {
+  display: none;
+}
 }
 
 
-/*----------------MD-----------------*/
+/*----------------MEDIA QUERY MD-----------------*/
 
 
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -327,7 +400,6 @@ padding-bottom: 50px;
   display: none;
 }
 
-/* THESE TWO COLS IN MD THEY BOTH WENT BOTTOM LEFT. NOW AT LEAST THEY GO BOTTOM RIGHT */
 /* DEPLOY SECTION */
 .db-invisible {
   display: none;
@@ -336,13 +408,24 @@ padding-bottom: 50px;
 .db-moved-right {
   float: right;
 }
+
+/* "DESIGNED DEVELOPERS" SECTION */
+/* TRANSITION TO MD MAKES THIS BIGGER */
+.db-invisible-xs {
+  font-size: 50px;
+}
 }
 
-/* -------------------LG---------------------- */
+/* ------------------- MEDIA QUERY LG---------------------- */
 
 @media all and (min-width: 992px) {
 /* HEADER */
 #db-hamburger {
   display: none;
+}
+
+/* "DESIGNED DEVELOPERS" SECTION */
+.db-invisible-xs {
+  font-size: 30px;
 }
 }
