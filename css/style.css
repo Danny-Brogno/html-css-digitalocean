@@ -384,24 +384,35 @@ padding-bottom: 50px;
 
 .container1 {
   height: 100%;
-  background-color: #f07f80;
-  border: 2px solid white;
-}
-
-.db-borders-align {
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
+  /* border-bottom: 2px solid white; */
 }
 
 .db-padding-nested {
-  padding: 10px 10px 10px 10px;
+  padding: 10px 0px 10px 0px;
 }
 
 .db-inside-boxes {
   width: 100%;
   height: inherit;
-  background-color: green;
-  border-right: 2px solid white;
+  line-height: 75px;
+  /* background-color: green; */
+  border-bottom: 2px solid white;
+}
+
+.db-inside-boxes span:nth-child(1) {
+  padding: 10px 50px 5px 10px;
+}
+
+.db-inside-boxes span:nth-child(1),
+.db-inside-boxes span:nth-child(2),
+.db-inside-boxes span:nth-child(3) {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.db-inside-boxes span:nth-child(3) {
+  float: right;
+  margin-right: 20px;
 }
 
 
