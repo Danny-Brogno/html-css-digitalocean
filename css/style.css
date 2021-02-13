@@ -1,11 +1,11 @@
 /* GENERAL RULES FOR THE COLS */
 
 [class*="col-"] {
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
 
-  /* background-color: yellow;
+  background-color: yellow;
   min-height: 70px;
-  border: 1px solid black; */
+  border: 1px solid black;
 }
 
 /* THIS MAKES ALL THE BULLETS GO AWAY */
@@ -217,6 +217,7 @@ margin-right: 0;
 
 /* ---------------WEBSITE LOGOS SECTION-------------- */
 
+/* THIS CSS TAKES THE BACKGROUND OF TWO SECTIONS (THE ONES IN GRAY) */
 .under-jumbotron, .db-designed-developers {
   text-align: center;
   height: 100%;
@@ -235,7 +236,8 @@ margin-right: 0;
   margin-right: auto;
 }
 
-#db-link-customers {
+/* THIS LINK CAN BE USED AGAIN */
+.db-link-reusable {
   text-decoration: none;
   color: blue;
 }
@@ -253,7 +255,7 @@ padding-bottom: 50px;
 }
 
 .db-deploy {
-  position: relative;/* ONE OF ITS SONS IS IN POSITION ABSOLUTE IN MEDIA QUERY XS (db-weird-stuff)*/
+  position: relative;/*ONE OF ITS SONS IS IN POSITION ABSOLUTE IN MEDIA QUERY XS(db-weird-stuff)*/
   min-height: 200px;
   line-height: 200%;
   font-size: 18px;
@@ -268,15 +270,16 @@ padding-bottom: 50px;
   padding-left: 5px;
 }
 
-/*ADVANCED SELECTION FOR MULTIPLE SECTIONS ("DEPLOY" AND "DESIGN FOR DEVELOPERS")*/
+/*ADVANCED SELECTION FOR MULTIPLE SECTIONS*/
 .db-deploy-style > h2,
-.db-design-developers-text > h2 {
+.db-design-developers-text > h2,
+.db-feature > h2 {
   color: #031c4e;
   font-size: 30px;
   padding-top: 80px;
 }
 
-/*ADVANCED SELECTION FOR MULTIPLE SECTIONS ("DEPLOY" AND "DESIGN FOR DEVELOPERS")*/
+/*ADVANCED SELECTION FOR MULTIPLE SECTIONS*/
 .db-deploy-style > p,
 .db-design-developers-text > p {
   color: #5c6a88;
@@ -298,7 +301,6 @@ padding-bottom: 50px;
   pointer-events: none;
   cursor: default;
   color: grey;
-
 }
 
 .active-link a {
@@ -322,7 +324,9 @@ padding-bottom: 50px;
 .db-invisible-xs {
   position: relative;
   top: 175px;
+  font-size: 30px;
 }
+
 
 .db-design-developers-text > h3 {
   color: #031c4e;
@@ -348,12 +352,57 @@ padding-bottom: 50px;
   background-size: 88%;
 }
 
+/* --------FEATURES SECTION----------- */
 
+.db-feature > h2 {
+  text-align: center;
+  padding: 80px 0px 20px 0px;
+}
 
+.db-feature > h3 {
+  color: #031c4e;
+  padding-top: 20px;
+}
 
+.db-feature > p {
+  color: #006aff;
+  padding: 20px 10px 0px 0px;
+}
 
+.db-feature > a {
+  display: block;
+  padding: 20px 10px 80px 0px;
+}
 
+/* ----------------------FAKE TABLE SECTION------------------------- */
 
+.db-fake-table-background {
+  width: 100%;
+  min-height: 600px;
+  background: linear-gradient(#0047c5, #001e9a);
+}
+
+.container1 {
+  height: 100%;
+  background-color: #f07f80;
+  border: 2px solid white;
+}
+
+.db-borders-align {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.db-padding-nested {
+  padding: 10px 10px 10px 10px;
+}
+
+.db-inside-boxes {
+  width: 100%;
+  height: inherit;
+  background-color: green;
+  border-right: 2px solid white;
+}
 
 
 
@@ -384,6 +433,7 @@ padding-bottom: 50px;
 .db-invisible-xs {
   display: none;
 }
+
 }
 
 
@@ -414,6 +464,7 @@ padding-bottom: 50px;
 .db-invisible-xs {
   font-size: 50px;
 }
+
 }
 
 /* ------------------- MEDIA QUERY LG---------------------- */
@@ -424,8 +475,4 @@ padding-bottom: 50px;
   display: none;
 }
 
-/* "DESIGNED DEVELOPERS" SECTION */
-.db-invisible-xs {
-  font-size: 30px;
-}
 }
