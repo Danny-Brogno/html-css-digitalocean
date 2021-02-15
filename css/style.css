@@ -525,6 +525,22 @@ padding-bottom: 50px;
   padding-top: 80px;
 }
 
+/* "LOVE DIGITAL OCEAN" SECTION*/
+.db-moving-arrows,
+.db-moving-arrows2 {
+  display: none;
+}
+
+.db-another-container {
+  position: relative;
+  left: 30px;
+}
+
+#db-four-little-pigs {
+  position: relative;
+  left: 3px;
+}
+
 }
 
 
@@ -569,7 +585,7 @@ padding-bottom: 50px;
 
 .db-moving-arrows2 {
   position: relative;
-  left: 100px;
+  left: 30px;
 }
 }
 
