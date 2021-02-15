@@ -26,7 +26,7 @@ body {
   padding-top: 70px;
 }
 
-/* header */
+/* ---------------------------header----------------------------------------- */
 header {
   position: fixed;
   top: 0px;
@@ -62,7 +62,7 @@ header {
   color: blue;
 }
 
-/* ------------THREE--------------------- */
+/* -------------THREE--------------------- */
 
 ul.head3 {
   list-style-type: none;
@@ -116,7 +116,7 @@ margin-right: 0;
   text-align: right;
 }
 
-/* ------------JUMBOTRON------------------------------------ */
+/* ----------------------------JUMBOTRON------------------------------------ */
 
 .jumbotron {
   width: 100%;
@@ -159,7 +159,7 @@ margin-right: 0;
   padding-bottom: 20px;
 }
 
-/* ------------FORM--------------- */
+/* --------------------------------FORM-------------------------------------- */
 
 #db-email, #db-pwd {
   height: 35px;
@@ -208,7 +208,7 @@ margin-right: 0;
   text-decoration: underline;
 }
 
-/* ---------------WEBSITE LOGOS SECTION-------------- */
+/* ---------------------------WEBSITE LOGOS SECTION--------------------------- */
 
 /* THIS CSS TAKES THE BACKGROUND OF TWO SECTIONS (THE ONES IN GRAY) */
 .under-jumbotron, .db-designed-developers {
@@ -235,7 +235,7 @@ margin-right: 0;
   color: blue;
 }
 
-/* --------"DEPLOY AND SCALE" SECTION*---------------/
+/* --------------------"DEPLOY AND SCALE" SECTION*-----------------------------/
 /* */
 .db-pad-bottom {
 padding-bottom: 50px;
@@ -288,7 +288,7 @@ padding-bottom: 50px;
   color: #5c6a88;
 }
 
-/* -------"DESIGNED FOR DEVELOPERS" section---------- */
+/* -------------------"DESIGNED FOR DEVELOPERS" section---------------------- */
 
 .disabled-link {
   pointer-events: none;
@@ -341,7 +341,7 @@ padding-bottom: 50px;
   background-size: 88%;
 }
 
-/* --------FEATURES SECTION----------- */
+/* ------------------------FEATURES SECTION---------------------------------- */
 
 .db-feature > h2 {
   text-align: center;
@@ -363,7 +363,7 @@ padding-bottom: 50px;
   padding: 20px 10px 80px 0px;
 }
 
-/* ----------------------FAKE TABLE SECTION------------------------- */
+/* ----------------------------FAKE TABLE SECTION----------------------------- */
 
 .db-fake-table-background {
   width: 100%;
@@ -431,17 +431,10 @@ padding-bottom: 50px;
 
 /* ------------------"LOVE DIGITAL OCEAN" SECTION------------------------------ */
 
-#db-love-digitalocean {
-  padding-bottom: 80px;
-  font-size: 40px;
-  color: #031c4e;
-}
-
 .db-another-container {
-  width: 550px;
-  height: 450px;
   background-color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 #db-useless-image {
@@ -472,15 +465,39 @@ padding-bottom: 50px;
 }
 
 #db-four-little-pigs {
-  position: relative;
-  right: 20px;
+  text-align: center;
 }
 
+/* ----------------------PRE-FOOTER SECTION (IN BLUE)------------------------ */
 
+.db-sfondo-blu {
+  width: 100%;
+  background: linear-gradient(#0047c5, #001e9a);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
 
+}
 
+.db-testo-improbabile > h2 {
+  color: #FFFFFF;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  font-size: 35px;
+}
 
+.db-testo-improbabile {
+  padding-bottom: 80px;
+}
 
+#db-link-bianco {
+  display: inline-block;
+  width: 30%;
+  padding: 2% 2% 2% 2%;
+  background-color: #FFFFFF;
+  font-size: 17px;
+  border-radius: 5px;
+  color: #2880ff;
+}
 
 
 
@@ -526,25 +543,20 @@ padding-bottom: 50px;
 }
 
 /* "LOVE DIGITAL OCEAN" SECTION*/
-.db-moving-arrows,
+.db-moving-arrows1,
 .db-moving-arrows2 {
   display: none;
 }
-
-.db-another-container {
-  position: relative;
-  left: 30px;
-}
-
-#db-four-little-pigs {
-  position: relative;
-  left: 3px;
+/* THIS MAKES SPACE IN XS BETWEEN WHITE CONTAINER ND GRAY */
+.db-space-between-white-and-grey {
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 }
 
 
-/*----------------MEDIA QUERY MD-----------------*/
+/*------------------------MEDIA QUERY MD--------------------------------------*/
 
 
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -577,19 +589,9 @@ padding-bottom: 50px;
   padding-top: 80px;
 }
 
-/* "LOVE DIGITAL OCEAN" SECTION */
-#db-four-little-pigs {
-  position: relative;
-  left: 40px;
 }
 
-.db-moving-arrows2 {
-  position: relative;
-  left: 30px;
-}
-}
-
-/* ------------------- MEDIA QUERY LG---------------------- */
+/* -------------------------------- MEDIA QUERY LG--------------------------- */
 
 @media all and (min-width: 992px) {
 /* HEADER */
