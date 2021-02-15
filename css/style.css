@@ -1,11 +1,11 @@
 /* GENERAL RULES FOR THE COLS */
 
 [class*="col-"] {
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
 
-  /* background-color: yellow;
+  background-color: yellow;
   min-height: 70px;
-  border: 1px solid black; */
+  border: 1px solid black;
 }
 
 /* THIS MAKES ALL THE BULLETS GO AWAY */
@@ -501,6 +501,16 @@ padding-bottom: 50px;
 
 /* ----------------------------FOOTER---------------------------------------- */
 
+.db-foot-backg {
+  background-color: #031c4e;
+  width: 100%;
+  min-height: 500px;
+}
+
+.db-foot-backg h2 {
+  color: red;
+  text-align: center;
+}
 
 
 
