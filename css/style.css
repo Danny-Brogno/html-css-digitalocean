@@ -1,27 +1,32 @@
 /* GENERAL RULES FOR THE COLS */
 
 [class*="col-"] {
-  /* border: 1px solid transparent; */
+  border: 1px solid transparent;
 
-  background-color: yellow;
+  /* background-color: yellow;
   min-height: 70px;
-  border: 1px solid black;
+  border: 1px solid black; */
 }
 
 /* THIS MAKES ALL THE BULLETS GO AWAY */
-
 ul, ol {
   list-style: none;
 }
 
-/* BODY */
+/* THIS MAKES ALL THE LINKS NOT UNDERLINED */
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+}
 
+/* BODY: BECAUSE OF THE HEADING IN POSITION FIXED */
 body {
   padding-top: 70px;
 }
 
 /* header */
-
 header {
   position: fixed;
   top: 0px;
@@ -53,14 +58,6 @@ header {
   color: #000000;
 }
 
-.head2 a:link {
-  text-decoration: none;
-}
-
-.head2 a:visited {
-  text-decoration: none;
-}
-
 .head2 a:hover {
   color: blue;
 }
@@ -87,18 +84,9 @@ ul.head3 {
   color: #000000;
 }
 
-.head3 a:link {
-  text-decoration: none;
-}
-
-.head3 a:visited {
-  text-decoration: none;
-}
-
 .head3 a:hover {
   color: blue;
 }
-
 
 .head3 .sign-up-link a {
   color: blue;
@@ -215,6 +203,11 @@ margin-right: 0;
   font-size: 15px;
 }
 
+/* THIS MAKES A HREF UNDERLINED (AT LINE 17 OF CSS THERE IS A COMMAND TO GET RID OF ALL UNDERLINED) */
+.db-underlined #terms-service {
+  text-decoration: underline;
+}
+
 /* ---------------WEBSITE LOGOS SECTION-------------- */
 
 /* THIS CSS TAKES THE BACKGROUND OF TWO SECTIONS (THE ONES IN GRAY) */
@@ -307,14 +300,9 @@ padding-bottom: 50px;
   color: #031c4e;
 }
 
-.active-link a:link {
-  text-decoration: none;
-}
-
-.active-link a:visited {
-  text-decoration: none;
-}
-
+.active-link a:link,
+.active-link a:visited,
+.active-link a:active,
 .active-link a:hover {
   color: #031c4e;
 }
@@ -341,7 +329,8 @@ padding-bottom: 50px;
   height: 100%;
   width: 100%;
 }
-
+/* THE FIRST ONE IS FOR ANOTHER SECTION "LOVE DIGITAL OCEAN" THE SECTION UNDERNEATH THE FAKE TABLE */
+.db-design-developers-text span:nth-child(1):hover,
 .db-design-developers-text span:nth-child(2):hover,
 .db-design-developers-text span:nth-child(3):hover,
 .db-design-developers-text span:nth-child(4):hover,
@@ -380,23 +369,32 @@ padding-bottom: 50px;
   width: 100%;
   min-height: 600px;
   background: linear-gradient(#0047c5, #001e9a);
+  padding-bottom: 60px;
+  padding-top: 80px;
 }
 
 .container1 {
   height: 100%;
-  /* border-bottom: 2px solid white; */
 }
 
 .db-padding-nested {
-  padding: 10px 0px 10px 0px;
+  padding: 10px 30px 10px 0px;
+}
+
+.db-heading-faketable {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
 }
 
 .db-inside-boxes {
   width: 100%;
   height: inherit;
   line-height: 75px;
-  /* background-color: green; */
+  color: #FFFFFF;
   border-bottom: 2px solid white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .db-inside-boxes span:nth-child(1) {
@@ -407,13 +405,90 @@ padding-bottom: 50px;
 .db-inside-boxes span:nth-child(2),
 .db-inside-boxes span:nth-child(3) {
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+}
+
+.db-inside-boxes span:nth-child(2) {
+  font-weight: lighter;
 }
 
 .db-inside-boxes span:nth-child(3) {
   float: right;
+  color: #0091c5;
   margin-right: 20px;
 }
+
+.db-test-speed a:link,
+.db-test-speed a:visited,
+.db-test-speed a:active,
+.db-test-speed a:hover {
+  color: #0091c5;
+}
+
+/* THIS MAKES THE LAST BORDER INVISIBLE (NEW YORK X 2) */
+.db-no-border {
+  border-color: transparent;
+}
+
+/* ------------------"LOVE DIGITAL OCEAN" SECTION------------------------------ */
+
+#db-love-digitalocean {
+  padding-bottom: 80px;
+  font-size: 40px;
+  color: #031c4e;
+}
+
+.db-another-container {
+  width: 550px;
+  height: 450px;
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+#db-useless-image {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.db-another-container > p:first-of-type {
+  line-height: 1.6;
+  color: #5c6a88;
+  font-size: 20px;
+}
+
+.db-another-container > p:nth-child(3) {
+  color: #061f50;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.db-another-container > p:nth-child(4) {
+  position: relative;
+  bottom: 45px;
+}
+
+.db-another-container > p:nth-child(5) {
+  position: relative;
+  bottom: 45px;
+}
+
+#db-four-little-pigs {
+  position: relative;
+  right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -443,6 +518,11 @@ padding-bottom: 50px;
 /* "DESIGNED FOR DEVELOPERS" SECTION RULES*/
 .db-invisible-xs {
   display: none;
+}
+
+/* FAKE TABLE SECTION */
+.db-padding-nested {
+  padding-top: 80px;
 }
 
 }
@@ -476,6 +556,21 @@ padding-bottom: 50px;
   font-size: 50px;
 }
 
+/* FAKE TABLE SECTION */
+.db-padding-nested {
+  padding-top: 80px;
+}
+
+/* "LOVE DIGITAL OCEAN" SECTION */
+#db-four-little-pigs {
+  position: relative;
+  left: 40px;
+}
+
+.db-moving-arrows2 {
+  position: relative;
+  left: 100px;
+}
 }
 
 /* ------------------- MEDIA QUERY LG---------------------- */
