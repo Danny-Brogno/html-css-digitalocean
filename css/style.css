@@ -1,11 +1,11 @@
 /* GENERAL RULES FOR THE COLS */
 
 [class*="col-"] {
-  /* border: 1px solid transparent; */
+border: 1px solid transparent;
 
-  background-color: yellow;
+  /* background-color: yellow;
   min-height: 70px;
-  border: 1px solid black;
+  border: 1px solid black; */
 }
 
 /* THIS MAKES ALL THE BULLETS GO AWAY */
@@ -365,6 +365,12 @@ padding-bottom: 50px;
 
 /* ----------------------------FAKE TABLE SECTION----------------------------- */
 
+.container1::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .db-fake-table-background {
   width: 100%;
   min-height: 600px;
@@ -501,16 +507,70 @@ padding-bottom: 50px;
 
 /* ----------------------------FOOTER---------------------------------------- */
 
+/*----------- FIRST COLUMN------------- */
 .db-foot-backg {
   background-color: #031c4e;
   width: 100%;
   min-height: 500px;
 }
 
-.db-foot-backg h2 {
-  color: red;
-  text-align: center;
+.db-foot1 {
+  font-family: 'Roboto', sans-serif;
+  color: #7a859d;
+  padding: 50px 0px 30px 0px;
 }
+
+.db-social-logos li {
+  display: inline;
+  padding: 0px 10px 0px 0px;
+}
+
+.db-social-logos a:link,
+.db-social-logos a:visited,
+.db-social-logos a:active,
+.db-social-logos a:hover {
+  color: #7a859d;
+  line-height: 200%;
+}
+
+.db-foot1 p:first-of-type {
+  color: #808ba2;
+  padding: 10px 0px 0px 0px;
+}
+
+.db-foot1 > p:nth-child(3){
+  padding-bottom: 5px;
+}
+
+/* ------------SECOND COLUMN-------------- */
+
+.db-foot-column {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.db-foot-column a:link,
+.db-foot-column a:visited,
+.db-foot-column a:active,
+.db-foot-column a:hover {
+  color: #808ba2;
+}
+
+.db-every-first-title-footer {
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
