@@ -575,7 +575,7 @@ padding-bottom: 50px;
   margin-right: 30px;
   margin-bottom: 40px;
   position: relative;
-  animation: mymove 2s;
+  animation: babyshark 2s;
   animation-iteration-count: infinite;
 }
 
@@ -656,11 +656,12 @@ padding-bottom: 50px;
 }
 
 /* ON LINE 578 THERE IS "ANIMATION: MYMOVE". LINE 579 MAKES IT GO ON FOREVER" */
-@keyframes mymove {
+@keyframes babyshark {
   0% {top: 0px;}
   50% {top: 20px;}
   100% {top: 0px;}
 }
+
 
 
 
